@@ -1,0 +1,242 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+
+/* Default Values */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --color-white: #fff;
+    --color-white-variant: rgba(255,255,255,0.6);
+    --color-red: rgb(166, 46, 52);
+    --color-red-variant: rgba(166, 46, 52,0.4);
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+    
+    --transition: all 400ms ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* Body */
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h5{
+    font-size: 1.5rem;
+}
+h6{
+    font-size: 1.25rem;
+}
+
+
+/* Navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-left: 1.5rem;
+}
+
+.nav-items{
+    margin: 1.2rem 2rem;
+}
+
+.nav-items span{
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 1.1rem;
+    margin: 0 0.35rem;
+}
+
+/* Main Section */
+
+/* section{
+    margin: 8rem 0 0 1.5rem; 
+} */
+
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-white);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 2px solid var(--color-primary);
+    transition: var(--transition);
+    background: var(--color-red);
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+
+.btn:hover{
+    color: black;
+    border: 2px solid var(--color-red-variant);
+    background: transparent;
+}
+
+.first{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.name{
+    margin-left: 2rem;
+}
+
+.name h5{
+    color: rgba(0,0,0,0.6);
+}
+.logo-image{
+    margin-right: 1rem;
+}
+
+.second{
+    background-color: var(--color-red);
+    color: var(--color-white);
+    text-align: center;
+    padding: 4rem 4rem 5rem;
+}
+
+.locn-item-head{
+    text-align: center;
+    padding-top: 1.2rem;
+}
+
+.locn-item-head h6{
+    font-style: italic;
+    color: var(--color-white-variant);
+}
+
+.office-locn{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding-top: 1.5rem;
+}
+
+.locn-item{
+    text-align: center;
+}
+
+.locn-item-details{
+    text-decoration: none;
+}
+
+.locn-item-details li{
+    font-size: 0.8rem;
+}
+
+.locn-item-img:hover{
+    transform: scale(0.85);
+    transition: var(--transition);
+}
+
+.third{
+    text-align: center;
+    padding: 4rem 4rem 5rem;
+}
+
+.about-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.about-card{
+    background-color: var(--color-red);
+    border-radius: 5%;
+    padding: 2rem;
+    border: 4px solid transparent;
+    color: var(--color-white);
+}
+
+.about-card:hover{
+    background: var(--color-white-variant);
+    border: 4px solid var(--color-red-variant);
+    color: black;
+    transform: scale(1.1);
+    transition: var(--transition);
+}
+
+.about-card h6{
+    padding-top: 1rem;
+}
+
+.about-card p{
+    font-size: 1.1rem;
+    padding: 1.2rem 1rem;
+}
+
+footer{
+    background-color: var(--color-red);
+    text-align: center;
+    color: var(--color-white);
+    padding: 3rem;
+}
+
+.cta{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+
+.cta a{
+    cursor: pointer;
+    color: var(--color-white);
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+footer>h2{
+    margin-bottom: 1.2rem;
+}
+
+.contact-items{
+    font-weight: 300;
+    padding-top: 0.75rem;
+}
+
+.copyright{
+    padding-top: 2.5rem;
+    font-size: 0.8rem;
+}
